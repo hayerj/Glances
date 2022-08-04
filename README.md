@@ -12,12 +12,15 @@ https://localhost:61208
 
 
 # Installing Glances auto start
+Run sudo if need
+
 ```wrap
  apt update
 
  apt install python3 -y
 ```
 **After that completes, we'll install pip3 with**
+
 ```wrap
 apt install python3-pip
 ```
