@@ -1,6 +1,6 @@
 # Glances
 ```wrap
-sudo apt install glances 
+ apt install glances 
 
 curl -L https://bit.ly/glances | /bin/bash
 ```
@@ -13,13 +13,13 @@ https://localhost:61208
 
 # Installing Glances auto start
 ```wrap
-sudo apt update
+ apt update
 
-sudo apt install python3 -y
+ apt install python3 -y
 ```
 **After that completes, we'll install pip3 with**
 ```wrap
-sudo apt install python3-pip
+apt install python3-pip
 ```
 **Install Glances and Bottle**
 ```wrap
@@ -27,14 +27,14 @@ pip3 install bottle
 pip3 install glances
 ```
 ```wrap
-$glances
-$glances -w
+glances
+glances -w
 Glances Web User Interface started on http://0.0.0.0:61208/
 ```
 
 **Create the Glances Service**
 ```wrap
-sudo nano /etc/systemd/system/glances.service
+nano /etc/systemd/system/glances.service
 ```
 **Add**
 
@@ -56,11 +56,11 @@ which glances
 
 **We do the following commands to do this**
 ```wrap
-sudo systemctl enable glances.service
+systemctl enable glances.service
 
-sudo systemctl start glances.service
+systemctl start glances.service
 
-sudo systemctl status glances
+systemctl status glances
 ```
 
 **Now that it's running, you can again go to the ip address of**
